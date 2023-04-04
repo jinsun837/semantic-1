@@ -1,0 +1,55 @@
+.d-none { /* display: none 하는 클래스 */
+    display: none;  /* 표시 : 안함 */
+}
+#header {
+    background-color: #5BD860;
+    text-align: center;
+    padding: 50px 0;
+}
+#header h2 {
+    color: white;
+    font-size: 50px;
+}
+#header h2:first-letter { /* :첫-문자열 의사선택자 */
+    font-size: 70px;
+}
+#header p {
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+}
+
+#menu {
+    background-color: #3D7158;
+    padding: 15px 0;
+    text-align: center;
+}
+#menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.main {
+    display: flex;   
+    max-width: 1440px;
+    min-height: 2000px; /* 블로그 게시글이 많으면, 화면이 자연스럽게 길어지는것을 표현 */
+    margin: 50px auto;
+}
+.main #content {
+    flex: 8;     /* 비율 : 전체에서 4정도의 공간비율 */
+    background-color: salmon;
+}
+.main #sub {
+    flex: 2;
+    background-color: lightyellow
+}
+
+#footer {
+    background-color: #3D7158;
+    padding: 50px; 
+    color: white;
+}
+.footer-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
